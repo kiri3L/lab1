@@ -3,19 +3,19 @@
 #include <string.h>
 
 
-void F_C(float d) /* the function takes a temperature value in degrees Celsius.
+void F_C(double d) /* the function takes a temperature value in degrees Celsius.
  The function then displays on the screen temperature value to Fahrenheit and Kelvin */
 {
     printf("%6.2f F \n",(9.0/5.0)*d +32);
     printf("%6.2f K \n\n",d+273.15);
 }
-void F_F(float d) /* the function takes a temperature value in degrees Fahrenheit
+void F_F(double d) /* the function takes a temperature value in degrees Fahrenheit
 The function then displays the value of temperature in Celsius and Kelvin */
 {
     printf("%6.2f C \n",(5.0/9.0)*(d - 32));
     printf("%6.2f K \n\n",(5.0/9.0)*(d - 32) + 273.15);
 }
-void F_K(float d) /* the function takes a temperature value in degrees Kelvin
+void F_K(double d) /* the function takes a temperature value in degrees Kelvin
 The function then displays the value of temperature in Celsius and Fahrenheit */
 {
     printf("%6.2f C \n", d - 273.15);
